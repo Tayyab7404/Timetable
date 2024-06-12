@@ -90,3 +90,58 @@ a:hover
 {
     color: #3498db;
 }
+
+@media (max-width: 768px) {
+    #logo_title {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #logo_title img {
+        width: 20%;
+    }
+
+    nav h3 {
+        font-size: 1.2em;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    td[colspan="2"], td[colspan="3"] {
+        display: block;
+        width: 100%;
+    }
+
+    td[rowspan="6"] {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: auto;
+        padding: 10px;
+    }
+
+    #logo_title img {
+        width: 30%;
+    }
+
+    nav h3 {
+        font-size: 1em;
+    }
+
+    table {
+        font-size: 10px;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+}
